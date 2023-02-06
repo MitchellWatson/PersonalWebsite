@@ -25,11 +25,11 @@
 :root {
     --font-size-small: 1.8rem;
     --font-size-normal: 2.2rem;
-    --font-size-medium: 2.8rem;
-    --font-size-medium-1: 4rem;
-    --font-size-large: 5.5rem;
-    --font-size-large2: 4rem;
-    --font-size-huge: 9rem;
+    --font-size-medium: 2rem;
+    --font-size-medium-1: 3rem;
+    --font-size-large: 3.5rem;
+    --font-size-large2: 2.5rem;
+    --font-size-huge: 6rem;
     --font-stack: 'Hk Grotesk', sans-serif;
 
     --line-height-normal: 1.7;
@@ -344,7 +344,7 @@ body:not(.user-is-tabbing) a:focus {
 .topnav {
     overflow: hidden;
     background-color: rgb(255, 255, 255);
-    padding: 2rem;
+    padding: 1rem;
     position: fixed;
     top: 0;
     width: 100%;
@@ -521,6 +521,7 @@ body:not(.user-is-tabbing) a:focus {
 .work__box {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 @media(max-width: 900px) {
@@ -531,7 +532,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__box:not(:last-child) {
-    margin-bottom: 25rem;
+    margin-bottom: 10rem;
 }
 
 @media(max-width: 500px) {
@@ -570,6 +571,10 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
+.work__image-box img {
+    height: 50vh
+}
+
 @media(min-width: 901px) {
     .work__image-box {
         flex: 1;
@@ -586,8 +591,8 @@ body:not(.user-is-tabbing) a:focus {
 .icon_img {
     border-radius: 50%;
     border: 2px solid rgb(189, 189, 189);
-    height: 10rem;
-    width: 10rem;
+    height: 6rem;
+    width: 6rem;
     margin: 1rem;
 }
 
@@ -609,6 +614,10 @@ body:not(.user-is-tabbing) a:focus {
     justify-content: space-between;
 }
 
+.client__logos img {
+    height: 30vh;
+}
+
 @media(max-width: 1240px) {
     .client__logos {
         overflow-x: scroll;
@@ -628,6 +637,10 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    justify-content: left;
+}
+.about__content img {
+    height: 70vh;
 }
 
 @media(max-width: 900px) {
@@ -647,7 +660,6 @@ body:not(.user-is-tabbing) a:focus {
     }
     
     .about__photo-container {
-        flex: 1;
         margin: 0 var(--gutter-huge) 0 0;
     }
 }
@@ -680,7 +692,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .footer__social-image {
-    height: 10rem;
+    height: 6rem;
 }
 
 .footer__github-buttons {
